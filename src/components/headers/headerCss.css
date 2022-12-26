@@ -1,0 +1,61 @@
+.home-header{
+    background:transparent;
+    font-weight: 600;
+}
+
+.home-nav-link{
+    border-bottom:6px solid transparent;
+    color:wheat;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.home-nav-link:hover{
+    border-bottom:6px solid #2ecc40; 
+    color: green; 
+}
+
+.home-nav-link:focus{
+    border-bottom:6px solid #2ecc40; 
+    color:#2ecc40; 
+}
+
+.app-header-logo{
+    color:white;
+    text-decoration: none;
+}
+
+.app-header-logo:hover{
+    color:#2ecc40; 
+  }
+
+
+.app-nav-links{
+ 
+    display: none;
+   
+}
+
+.app-nav-link{
+    border-bottom:6px solid transparent;
+    color:white;
+    padding: 1rem;
+    text-decoration: none;
+    margin:0;}
+
+.app-nav-link:hover{
+    border-bottom:6px solid #2ecc40; 
+    color: green;   
+}
+
+.app-nav-link:focus{
+    border-bottom:6px solid #2ecc40;
+    color:#2ecc40;
+}
+
+
+@media screen and (max-width: 990px) {
+    .app-nav-links{
+     display:block;
+    }
+  }
