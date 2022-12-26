@@ -1,0 +1,72 @@
+.card-button{
+    border: 2px solid #0389BE;
+    padding: .5rem 1rem;
+    color: #0389BE;
+    font-weight:600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.card-button:hover {
+    background-color: #0389BE;
+    color: white;
+}
+
+.work-button{
+    border: 2px solid #0389BE;
+    padding: .5rem 1rem;
+    color: #2C2D2F;
+    font-weight:600;
+    cursor: pointer;
+    transition: all 1s; 
+    background-color: #0389BE;
+}
+
+.work-button:hover {
+    background-color: #2C2D2F;
+    color: #0389BE;
+}
+
+.project-tile {
+    box-shadow: 4px 5px #888888;
+    color: #2C2D2F ;
+    font-weight: 600;
+    transition: all .5s; 
+    z-index: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.project-tile:hover {
+    box-shadow: 8px 10px #0389BE;
+    cursor: pointer;
+}
+
+
+.project-categories-button {
+    display: auto;
+}
+
+.projects-list-1 {
+    display: auto;
+}
+
+.projects-list-2{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-categories-button  {
+        display: none;
+    } 
+
+    .projects-list-1 {
+        display: none;
+    }
+    
+    .projects-list-2{
+        display: block;
+    }
+  }
+

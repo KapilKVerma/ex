@@ -1,0 +1,13 @@
+.navigation-bar{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .navigation-bar  {
+        display: block;    
+        z-index: 1;
+    } 
+  }

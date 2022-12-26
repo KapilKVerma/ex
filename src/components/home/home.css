@@ -1,0 +1,37 @@
+.intro-container {
+    position: absolute;
+    top: 350px;
+    width: 100%;
+}
+
+.intro-content {
+    font-size: 4rem;
+    font-family: bernard;
+    font-weight: 600;
+}
+
+.start-arrow {
+    color:white;
+    background: #0389BE; 
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    opacity: .7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    display: none;
+
+}
+
+@media only screen and (max-width: 420px) {
+    .intro-content {   
+        font-size: 3rem;
+    }
+
+    .start-arrow {
+        display: block;
+    }
+
+  }

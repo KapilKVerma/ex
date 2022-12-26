@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
+  text-align: start;
+  overflow-y:hidden;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+  width: 220px; 
+  background: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.social-link { 
+  font-size: 1.25rem;
+  margin:1rem;
+  color:#0389BE;
+  cursor: pointer;
+}
+
+.sidebar-link {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  font-family: "calibri";
+  color: gray;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.sidebar-link:hover {
+  color: #0389BE;
+  border-bottom: 1px solid #0389BE;
+  font-weight: 600;
+}
+
+.sidebar-link:focus {
+  color: #0389BE;
+}
+
+.carousel-body {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.carousel-body::-webkit-scrollbar {
+ max-width: 5px;      
+}
+
+.carousel-body::-webkit-scrollbar-track { 
+  display: none;        
+}
+
+.carousel-body::-webkit-scrollbar-thumb {
+  background-color: #0389BE;   
+  border-radius: 20px;      
+}
+
+.body-container {
+  padding: 2rem;
+  width: 75%;
+  transition: all .5sec; 
+  z-index: 0;
+}
+
+
+.navigation-bar{
+  display: none;
+  position: fixed;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .sidebar {
+   display: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .body-container {  
+    margin-top: 4rem; 
+    width: 85%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navigation-bar  {
+    display: block;
+}  
+}
+
+@media only screen and (max-width: 420px) {
+  .body-container {   
+    width: 95%;
   }
 }
